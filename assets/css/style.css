@@ -4,6 +4,7 @@
 html {
     background: white url('../img/bg-img.jpg') no-repeat center;
     background-size: cover;
+    background-attachment: fixed;
 }
 .flexbox {
     display: flex;
