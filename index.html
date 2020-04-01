@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryčio Vestuves</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    <script src="assets/js/script.js" defer></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <ol>
+            <a href="#registrationForm"><li>Add Person</li></a>
+            <a href="#registry"><li>Registry</li></a>
+            <a href=""><li>rsvp</li></a>
+        </ol>
+    </nav>
+    <!-- END Navbar -->
+    <main>
+        <!-- Page Title Section -->
+        <section>
+            <h1>Inga & Rytis</h1>
+            <h3>Are getting Married</h3>    
+        </section>
+        <!-- END Page Title -->
+
+        <!-- Registration Form -->
+        <form action="" id="registrationForm" class="styled-box">
+            <h2>Add Person</h2>
+            <h4>Name *</h4>
+            <div class="flexbox">
+                <div class="input-group">
+                    <input type="text" name="guestName" id="guestName">
+                    <label for="guestName">First Name</label>  
+                </div>
+                <div class="input-group">
+                    <input type="text" name="guestSurname" id="guestSurname">  
+                    <label for="guestSurname">Last Name</label>    
+                </div>
+            </div>
+            <h4>Plus One</h4>
+            <div class="flexbox">
+                <div class="input-group">
+                    <input type="text" name="plusName" id="plusName">
+                    <label for="plusName">First Name</label>    
+                </div>
+                <div class="input-group">
+                    <input type="text" name="plusSurname" id="plusSurname">
+                    <label for="plusSurname">Last Name</label>
+                </div>    
+            </div>            
+            <div class="flexbox">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+        <!-- END Registration Form -->
+
+        <!-- Guest List Section -->
+        <section class="styled-box" id="registry">
+            <h2>Guest List</h2>
+            <div class="flexbox">
+                <table>
+                    <thead>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>a</td>
+                            <td>b</td>
+                        </tr>
+                        <tr>
+                            <td>a</td>
+                            <td>b</td>
+                        </tr>
+                    </tbody>
+                </table>    
+            </div>
+        </section>
+        <!-- END Guest List -->
+        <footer>
+            &copy; 2020. Website is made for learning purposes.
+        </footer>
+    </main>
+</body>
+</html>
