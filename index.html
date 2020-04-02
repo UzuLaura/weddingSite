@@ -31,7 +31,10 @@
         <!-- Registration Form -->
         <form action="" id="registrationForm" class="styled-box" name="registrationForm">
             <h2>Add Person</h2>
-            <h4>Name *</h4>
+            <div class="alert alert-remove" id="guestAlert">
+                <span>Please enter guest First Name and Last Name!</span><span class="closeButton">X</span>
+            </div>
+            <h4>Guest Name *</h4>
             <div class="flexbox">
                 <div class="input-group">
                     <input type="text" name="guestName" id="guestName">
