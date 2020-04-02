@@ -1,6 +1,5 @@
 // Prints Added Guests from Local Storage to Registry Table
 
-
 for (let i = 0; i < indexCount; i++) {
     const name = `name${i}`;
     const surname = `surname${i}`;

@@ -131,16 +131,21 @@ table, th, td {
 
 /* Alert Style */
 
-.alert {
+.alert, .success-alert {
     display: flex;
     justify-content: space-between;
     width: 100%;
     padding: 7px;
-    background-color: rgba(245, 115, 136, 0.7);
     color: white;
 }
 .alert-remove {
     display: none;
+}
+.alert {
+    background-color: rgba(245, 115, 136, 0.7);
+}
+.success-alert {
+    background-color: rgba(115, 245, 137, 0.7);
 }
 .closeButton {
     padding: 0 5px;

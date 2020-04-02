@@ -10,24 +10,18 @@ registrationForm.addEventListener('submit', e => {
 
     if (!guestName || !guestSurname) {
         guestAlert.classList.remove('alert-remove');
+        successAlert.classList.add('alert-remove');
     } else {
         addToLocalStorage (guestName, guestSurname)
         increaseIndex ();
         guestAlert.classList.add('alert-remove');
+        successAlert.classList.remove('alert-remove');
         if (plusName || plusSurname) {        
             addToLocalStorage (plusName, plusSurname)
             increaseIndex ();
         }    
     }
 
-})
-
-// ---------------------------------
-
-// Close Button
-
-closeButton.addEventListener('click', () => {
-    guestAlert.classList.add('alert-remove');
 })
 
 // ---------------------------------
