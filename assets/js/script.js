@@ -24,7 +24,7 @@ registrationForm.addEventListener('submit', e => {
 
     if (!guestName || !guestSurname) {
         guestAlert.classList.remove('alert-remove');
-    } else if (guestName && guestSurname) {
+    } else {
         addPerson(guestName, guestSurname);
         guestAlert.classList.add('alert-remove');
         if (plusName || plusSurname) {        
