@@ -24,23 +24,20 @@ registrationForm.addEventListener('submit', e => {
     if (!guestName) {
         alert('Please enter guest name!');
     } else {
-        const tr = table.insertRow();
-        const td1 = tr.insertCell();
-        const td2 = tr.insertCell();
-    
-        td1.textContent = guestName;
-        td2.textContent = guestSurname;
-    
+        addPerson(guestName, guestSurname);
     }
 
-    if (plusName || plusSurname) {
-        const tr1 = table.insertRow();
-        const td3 = tr1.insertCell();
-        const td4 = tr1.insertCell();    
-        
-        td3.textContent = plusName;
-        td4.textContent = plusSurname;    
+    if (plusName || plusSurname) {        
+        addPerson(plusName, plusSurname);
     }
 })
 
+function addPerson (name, surname) {
+    const tr = table.insertRow();
+    const td1 = tr.insertCell();
+    const td2 = tr.insertCell();
+
+    td1.textContent = name;
+    td2.textContent = surname;
+}
 // ---------------------------------
