@@ -12,12 +12,12 @@ registrationForm.addEventListener('submit', e => {
         guestAlert.classList.remove('alert-remove');
         successAlert.classList.add('alert-remove');
     } else {
-        addToLocalStorage (guestName, guestSurname)
+        addToLocalStorage (guestName, guestSurname);
         increaseIndex ();
         guestAlert.classList.add('alert-remove');
         successAlert.classList.remove('alert-remove');
         if (plusName || plusSurname) {        
-            addToLocalStorage (plusName, plusSurname)
+            addToLocalStorage (plusName, plusSurname);
             increaseIndex ();
         }    
     }

@@ -31,6 +31,10 @@ footer {
     text-align: center;
     background-color: white;
     padding: 2vh;
+    position: sticky;
+}
+main {
+    min-height: calc(100vh - 6vh);
 }
 
 /* Navbar Style */
@@ -127,6 +131,7 @@ table, th, td {
     border-collapse: collapse;
     background-color: white;
 }
+
 /* ----------------------------------- */
 
 /* Alert Style */
